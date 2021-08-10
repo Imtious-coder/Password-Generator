@@ -5,34 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
     <link style="width: 2000px;" rel="icon" href="./images-removebg-preview.png" type="image/icon type">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Title -->
     <title>Password Generator</title>
 </head>
 
 <body>
 
     <section class="container">
-        <p>Password Generator</p>
-        <p>Password</p>
-        <form action="">
+        <!-- Title -->
+        <p class="Title">Password Generator</p>
+        <p class="PasswordDisplay">Password</p>
+        <form class="form">
+            <!-- Number of Characters -->
             <label for="CharacterAmountNumber">Number of Characters</label>
-            <input type="range" min="1" max="50" value="10" id="CharacterAmountRange">
-            <input type="number" min="1" max="50" value="10" id="CharacterAmountNumber">
-
+            <div class="CharacterAmountNumberInputs">
+                <input type="range" min="1" max="50" value="10" id="CharacterAmountRange">
+                <input type="number" min="1" max="50" value="10" id="CharacterAmountNumber" class="NumberInput">
+            </div>
+            <!-- Include Uppercase -->
             <label for="includeUppercase"> Include Uppercase</label>
             <input type="checkbox" name="" id="includeUppercase">
-
+            <!-- Include Number -->
             <label for="includeNumbers"> Include Numbers</label>
             <input type="checkbox" name="" id="includeNumbers">
-
+            <!-- Include Symbole -->
             <label for="includeSymbols"> Include Symbols</label>
             <input type="checkbox" name="" id="includeSymbols">
 
-            <button type="submit"> Generate Password</button>
+            <!-- Generate Button -->
+            <button type="submit" class="Button"> Generate Password</button>
         </form>
     </section>
 
+    <!-- Custom JavaScript -->
     <script src="./app.js"></script>
 </body>
 
